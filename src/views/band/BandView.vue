@@ -7,10 +7,10 @@
 </template>
 <script>
 import MenuListCp from "@/components/inc/MenuListCp.vue";
-import BandMainCp from "@/components/band/BandMainCp.vue";
+import BandSyncCp from "@/components/band/BandSyncCp.vue";
 
 export default {
-  components: { MenuListCp, BandMainCp },
+  components: { MenuListCp, BandSyncCp },
   mounted() {
     //== HOME / SUB 공통 요소 화면설정 ==============================
 

@@ -4,15 +4,29 @@ import HomeView from "../views/home/HomeView.vue";
 
 Vue.use(VueRouter);
 
+// 로그인
 const LoginView = () => import("@/views/join/LoginView.vue");
+
+// 건강관리
 const HealthView = () => import("@/views/health/HealthView.vue");
 const HealthRecordView = () => import("@/views/health/HealthRecordView.vue");
+
+// 마이페이지
 const MypageView = () => import("@/views/mypage/MypageView.vue");
-const BandView = () => import("@/views/band/BandView.vue");
-const BandMainCp = () => import("@/components/band/BandMainCp.vue");
-const BandSettingView = () => import("@/views/band/BandSettingView.vue");
+// 밴드
+const BandView = () => import("@/views/band/BandView.vue"); //밴드 메인
+const BandSyncCp = () => import("@/components/band/BandSyncCp.vue"); // 기기 동기화
+const BandSettingCp = () => import("@/components/band/BandSettingCp.vue"); // 기기 선택 전 상태
+const BandDeviceCp = () => import("@/components/band/BandDeviceCp.vue"); // 기기 목록
+const BandSearchCp = () => import("@/components/band/BandSearchCp.vue"); // 기기 검색
+
+// 멤버쉽 카드
 const MbershipView = () => import("@/views/mbership/MbershipView.vue");
+
+// 알림
 const AlarmView = () => import("@/views/alarm/AlarmView.vue");
+
+// 공지사항
 const NoticeView = () => import("@/views/notice/NoticeView.vue");
 
 const routes = [
@@ -52,14 +66,24 @@ const routes = [
     component: BandView,
     children: [
       {
-        path: "main",
-        name: "band-main",
-        component: BandMainCp,
+        path: "sync",
+        name: "band-sync",
+        component: BandSyncCp,
       },
       {
         path: "setting",
         name: "band-setting",
-        component: BandSettingView,
+        component: BandSettingCp,
+      },
+      {
+        path: "device",
+        name: "band-device",
+        component: BandDeviceCp,
+      },
+      {
+        path: "search",
+        name: "band-search",
+        component: BandSearchCp,
       },
     ],
   },

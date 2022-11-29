@@ -10,8 +10,13 @@
           </router-link>
         </li>
         <li>
-          <router-link :to="{ name: 'band-main' }"
-            ><img src="/images/ic_nav02.png" alt="인바디밴드" />
+          <router-link :to="{ name: 'band-sync' }"
+            ><img src="/images/ic_nav02.png" alt="인바디밴드1" />
+          </router-link>
+        </li>
+        <li>
+          <router-link :to="{ name: 'band-setting' }"
+            ><img src="/images/ic_nav02.png" alt="인바디밴드2" />
           </router-link>
         </li>
         <li class="home">
