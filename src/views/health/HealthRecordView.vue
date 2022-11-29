@@ -142,16 +142,10 @@ export default {
   components: {},
 
   mounted() {
+    // 페이지 url로 top, bottom 설정
+    this.$parent.f_urlCheck();
     // body css class changes
     document.body.classList.add("sub_con");
-
-    // 우측메뉴 열고 닫기
-    $(".m_menu_btn").bind("click", function () {
-      $(".m_menu_wrap").fadeIn(300);
-    });
-    $(".m_menu_close").bind("click", function () {
-      $(".m_menu_wrap").fadeOut(300);
-    });
   },
 };
 </script>

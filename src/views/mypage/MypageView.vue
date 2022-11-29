@@ -1,21 +1,5 @@
 <template>
   <div>
-    <header>
-      <div class="top">
-        <router-link to="/">
-          <img src="images/ic_top_prev.png" alt="이전"
-        /></router-link>
-        <p class="txt">마이페이지</p>
-        <a href="#;" class="m_menu_btn"
-          ><img src="images/ic_menu.png" alt="menu"
-        /></a>
-      </div>
-    </header>
-
-    <!--//MENU-->
-    <MenuListCp />
-    <!--//MENU-->
-
     <!-- //Content -->
     <MypageMainCp />
     <!-- //Content -->
@@ -23,22 +7,21 @@
 </template>
 
 <script>
-import MenuListCp from "@/components/inc/MenuListCp.vue";
 import MypageMainCp from "@/components/mypage/MypageMainCp.vue";
 
 export default {
-  components: { MenuListCp, MypageMainCp },
+  components: { MypageMainCp },
   mounted() {
+    //==공통 화면설정=================================================
+
+    // 페이지 url로 top, bottom 설정
+    this.$parent.f_urlCheck();
     // body css class changes
     document.body.classList.add("sub_con");
+    // header title changes
+    this.$parent.f_urlCheckTitleName();
 
-    // 우측메뉴 열고 닫기
-    $(".m_menu_btn").bind("click", function () {
-      $(".m_menu_wrap").fadeIn(300);
-    });
-    $(".m_menu_close").bind("click", function () {
-      $(".m_menu_wrap").fadeOut(300);
-    });
+    //================================================================
   },
 };
 </script>

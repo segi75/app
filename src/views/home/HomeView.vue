@@ -14,11 +14,9 @@
         <br />무엇을 도와드릴까요?
       </p>
     </header>
-
     <!--//MENU-->
     <MenuListCp />
     <!--//MENU-->
-
     <section class="main_con">
       <!-- 마이메뉴 -->
       <MymenuIconCp />
@@ -38,9 +36,10 @@ export default {
   name: "HomeView",
   components: { MenuListCp, MymenuIconCp, NoticeListCp },
   mounted() {
-    // body css class changes: remove
-    document.body.classList.remove("sub_con");
+    //== HOME / SUB 공통 요소 화면설정 ==============================
 
+    // 페이지 url로 top, bottom 설정
+    this.$parent.f_urlCheck();
     // 우측메뉴 열고 닫기
     $(".m_menu_btn").bind("click", function () {
       $(".m_menu_wrap").fadeIn(300);
@@ -48,9 +47,7 @@ export default {
     $(".m_menu_close").bind("click", function () {
       $(".m_menu_wrap").fadeOut(300);
     });
-
-    // 하단 바로가기 login페이지에서 제거
-    this.$parent.f_loginPageCheck();
+    //================================================================
 
     // my메뉴
     const swiper3 = new Swiper(".mySwiper3", {

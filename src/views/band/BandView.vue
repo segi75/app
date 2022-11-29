@@ -28,7 +28,11 @@ import BandMainCp from "@/components/band/BandMainCp.vue";
 export default {
   components: { MenuListCp, BandMainCp },
   mounted() {
-    // body css class changes : add
+    //== HOME / SUB 공통 요소 화면설정 ==============================
+
+    // 페이지 url로 top, bottom 설정
+    this.$parent.f_urlCheck();
+    // body css class changes
     document.body.classList.add("sub_con");
 
     // 우측메뉴 열고 닫기
@@ -38,6 +42,8 @@ export default {
     $(".m_menu_close").bind("click", function () {
       $(".m_menu_wrap").fadeOut(300);
     });
+
+    //================================================================
   },
 };
 </script>

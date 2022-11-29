@@ -1,9 +1,18 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import HomeView from "../views/home/HomeView.vue";
-import HealthView from "../views/health/HealthView.vue";
 
 Vue.use(VueRouter);
+
+const LoginView = () => import("@/views/join/LoginView.vue");
+const HealthView = () => import("@/views/health/HealthView.vue");
+const HealthRecordView = () => import("@/views/health/HealthRecordView.vue");
+const MypageView = () => import("@/views/mypage/MypageView.vue");
+const BandView = () => import("@/views/band/BandView.vue");
+const BandSettingView = () => import("@/views/band/BandSettingView.vue");
+const MbershipView = () => import("@/views/mbership/MbershipView.vue");
+const AlarmView = () => import("@/views/alarm/AlarmView.vue");
+const NoticeView = () => import("@/views/notice/NoticeView.vue");
 
 const routes = [
   // home
@@ -16,8 +25,7 @@ const routes = [
   {
     path: "/login",
     name: "login",
-    component: () =>
-      import(/* webpackChunkName: "login" */ "@/views/join/LoginView.vue"),
+    component: LoginView,
   },
   // health
   {
@@ -28,53 +36,47 @@ const routes = [
   {
     path: "/healthRecord",
     name: "healthRecord",
-    component: () =>
-      import(
-        /* webpackChunkName: "healthRecord" */ "@/views/health/HealthRecordView.vue"
-      ),
+    component: HealthRecordView,
   },
   // mypage
   {
     path: "/mypage",
     name: "mypage",
-    component: () =>
-      import(/* webpackChunkName: "mypage" */ "@/views/mypage/MypageView.vue"),
+    component: MypageView,
   },
   // band
   {
     path: "/band",
     name: "band",
-    component: () =>
-      import(/* webpackChunkName: "band" */ "@/views/band/BandView.vue"),
+    component: BandView,
   },
   {
     path: "/band-setting",
     name: "band-setting",
-    component: () =>
-      import(/* webpackChunkName: "band" */ "@/views/band/BandSettingView.vue"),
+    component: BandSettingView,
   },
   // mbership
   {
     path: "/mbership",
     name: "mbership",
-    component: () =>
-      import(
-        /* webpackChunkName: "mbership" */ "@/views/mbership/MbershipView.vue"
-      ),
+    component: MbershipView,
   },
   // alarm
   {
     path: "/alram",
     name: "alram",
-    component: () =>
-      import(/* webpackChunkName: "alarm" */ "@/views/alarm/AlarmView.vue"),
+    component: AlarmView,
   },
   // notice
   {
     path: "/notice",
     name: "notice",
-    component: () =>
-      import(/* webpackChunkName: "notice" */ "@/views/notice/NoticeView.vue"),
+    component: NoticeView,
+  },
+  {
+    path: "*",
+    name: "notice",
+    component: HomeView,
   },
 ];
 

@@ -17,11 +17,14 @@ export default {
   components: {},
 
   mounted() {
+    //== HOME / SUB 공통 요소 화면설정 ==============================
+
+    // 페이지 url로 top, bottom 설정
+    this.$parent.f_urlCheck();
     // body css class changes
     document.body.classList.add("login_wrap");
 
-    // 하단 바로가기 login페이지에서 제거
-    this.$parent.f_loginPageCheck();
+    //================================================================
   },
 };
 </script>

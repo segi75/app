@@ -1,12 +1,19 @@
 <template>
   <div id="app">
-    <!-- 라우터 호출 View 출력 -->
-    <router-view></router-view>
-    <!-- 하단 바로가기 버튼 -->
-    <FooterCp v-if="isLoginPage" />
+    <!-- //HEADER -->
+    <SubHeaderCp v-if="divUrl === 1" :title="menuName" />
+    <!-- fade 애니메이션 -->
+    <transition name="slide-fade" mode="out-in">
+      <!-- 라우터 호출 View 출력 -->
+      <router-view></router-view>
+      <!-- 하단 바로가기 버튼 -->
+    </transition>
+    <!-- fade 애니메이션 -->
+    <FooterCp v-if="divUrl !== 2" />
   </div>
 </template>
 <script>
+import SubHeaderCp from "./components/inc/SubHeaderCp.vue";
 import FooterCp from "@/components/inc/FooterCp.vue";
 // Import Swiper Vue.js components
 import { Swiper, SwiperSlide } from "swiper/vue";
@@ -15,29 +22,54 @@ import { Swiper, SwiperSlide } from "swiper/vue";
 import "swiper/css";
 
 export default {
-  components: {
-    FooterCp,
-  },
+  components: { SubHeaderCp, FooterCp },
   data() {
     return {
-      isLoginPage: true,
+      divUrl: 0,
+      menuName: "홈",
     };
   },
   methods: {
-    f_loginPageCheck() {
-      let url = window.location.href;
-      console.log("url:" + url);
-      console.log("isLoginPage:" + this.isLoginPage);
-      if (url.indexOf("/login") > -1) {
-        this.isLoginPage = false;
+    // 로그인 페이지 하단 바 숨기기
+    f_urlCheck() {
+      let router = this.$route;
+      const url = router.fullPath;
+      // divUrl 0: home , 1: sub , 2 none
+      if (url == "/" || url == "/#;") {
+        this.divUrl = 0;
       } else {
-        this.isLoginPage = true;
+        this.divUrl = 1;
+        if (url.indexOf("/login") > -1 || url.indexOf("/healthRecord") > -1) {
+          this.divUrl = 2;
+        }
+      }
+    },
+    // 서브메뉴 타이틀 설정
+    f_urlCheckTitleName() {
+      let router = this.$route;
+      let url = router.fullPath;
+      console.log("url:", url);
+      if (url == "/health") {
+        this.menuName = "건강관리";
+      } else if (url == "/mypage") {
+        this.menuName = "마이페이지";
+      } else if (url == "/band") {
+        this.menuName = "인바디밴드";
+      } else if (url == "/band-setting") {
+        this.menuName = "인바디밴드";
+      } else if (url == "/mbership") {
+        this.menuName = "모바일 회원카드";
+      } else if (url == "/alram") {
+        this.menuName = "알림";
+      } else if (url == "/notice") {
+        this.menuName = "공지사항";
       }
     },
   },
   mounted() {
     // page 기능
-    this.f_loginPageCheck();
+    this.f_urlCheck();
+    this.f_urlCheckTitleName();
 
     /* Mypage Info Menu */
     $(".my_etc_info .title").bind("click", function () {
@@ -133,3 +165,47 @@ export default {
   },
 };
 </script>
+
+<style scoped>
+/*** TRANSITIONS (애니메에션)***/
+.fade-enter {
+  opacity: 0;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s ease-out;
+}
+
+.fade-leave-to {
+  opacity: 0;
+}
+
+.slide-fade-enter {
+  transform: translateX(10px);
+  opacity: 0;
+}
+
+.slide-fade-enter-active,
+.slide-fade-leave-active {
+  transition: all 0.2s ease;
+}
+
+.slide-fade-leave-to {
+  transform: translateX(-10px);
+  opacity: 0;
+}
+
+.slide-up-enter {
+  transform: translateY(10px);
+  opacity: 0;
+}
+
+.slide-up-enter-active {
+  transition: all 0.2s ease;
+}
+
+.slide-up-move {
+  transition: transform 0.8s ease-in;
+}
+</style>
