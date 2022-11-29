@@ -1,43 +1,38 @@
-<template>
-  <div id="app">
-    <!-- 라우터 호출 View 출력 -->
-    <router-view></router-view>
-    <!-- 하단 바로가기 버튼 -->
-    <FooterCp v-if="isLoginPage" />
-  </div>
-</template>
-<script>
-import FooterCp from "@/components/inc/FooterCp.vue";
-// Import Swiper Vue.js components
-import { Swiper, SwiperSlide } from "swiper/vue";
+// JavaScript Document
+$(function () {
+  $.initiated = function () {
+    /* MENU */
+    $(".m_menu_btn").bind("click", function () {
+      $(".m_menu_wrap").fadeIn(300);
+      /*$('html, body').css({
+		  'overflow-y': 'hidden'
+		});*/
+    });
+    $(".m_menu_close").bind("click", function () {
+      $(".m_menu_wrap").fadeOut(300);
+      /*$('html, body').css({
+		  'overflow-y': 'auto'
+		});*/
+    });
 
-// Import Swiper styles
-import "swiper/css";
-
-export default {
-  components: {
-    FooterCp,
-  },
-  data() {
-    return {
-      isLoginPage: true,
-    };
-  },
-  methods: {
-    f_loginPageCheck() {
-      let url = window.location.href;
-      console.log("url:" + url);
-      console.log("isLoginPage:" + this.isLoginPage);
-      if (url.indexOf("/login") > -1) {
-        this.isLoginPage = false;
+    /* M_MENU */
+    $(".m_menu li.active").addClass("open").children("ul").show();
+    $(".m_menu li.m_menu01 > a").on("click", function () {
+      $(this).removeAttr("href");
+      var element = $(this).parent("li");
+      if (element.hasClass("open")) {
+        element.removeClass("open");
+        element.find("li").removeClass("open");
+        element.find("ul").slideUp(200);
       } else {
-        this.isLoginPage = true;
+        element.addClass("open");
+        element.children("ul").slideDown(200);
+        element.siblings("li").children("ul").slideUp(200);
+        element.siblings("li").removeClass("open");
+        element.siblings("li").find("li").removeClass("open");
+        element.siblings("li").find("ul").slideUp(200);
       }
-    },
-  },
-  mounted() {
-    // page 기능
-    this.f_loginPageCheck();
+    });
 
     /* Mypage Info Menu */
     $(".my_etc_info .title").bind("click", function () {
@@ -96,12 +91,12 @@ export default {
     });
 
     /* POPUP - 인바디밴드 */
-    // $(".modal_btn").bind("click", function () {
-    //   $(".modal").stop().show();
-    // });
-    // $(".modal_close").bind("click", function () {
-    //   $(".modal").stop().hide();
-    // });
+    $(".modal_btn").bind("click", function () {
+      $(".modal").stop().show();
+    });
+    $(".modal_close").bind("click", function () {
+      $(".modal").stop().hide();
+    });
 
     $(".modal02_btn").bind("click", function () {
       $(".modal02").stop().show();
@@ -130,6 +125,5 @@ export default {
     $(".modal05_close").bind("click", function () {
       $(".modal05").stop().hide();
     });
-  },
-};
-</script>
+  };
+});

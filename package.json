@@ -8,7 +8,11 @@
   },
   "dependencies": {
     "core-js": "^3.8.3",
+    "expose": "^0.1.4",
+    "jquery": "^3.6.1",
+    "jquery-ui": "^1.13.2",
     "register-service-worker": "^1.7.2",
+    "swiper": "^8.4.5",
     "vue": "^2.6.14",
     "vue-router": "^3.5.1",
     "vuex": "^3.6.2"
