@@ -3,7 +3,7 @@
     <section>
       <div class="qrcode">
         <p class="txt01">QR코드</p>
-        <img src="images/qrcode.png" alt="qrcode" />
+        <img src="/images/qrcode.png" alt="qrcode" />
         <p class="txt02">회원번호</p>
         <p class="txt03">MCARD+2233+2010-00015</p>
       </div>
@@ -22,7 +22,7 @@
                   ><span class="txt02">MCARD+2233+2010-00015</span>
                 </p>
                 <button class="on_btn">
-                  <img src="images/ic_check.png" alt="" />기본 기관카드로
+                  <img src="/images/ic_check.png" alt="" />기본 기관카드로
                   설정되어 있습니다.
                 </button>
               </div>

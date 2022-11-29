@@ -3,11 +3,11 @@
     <header>
       <div class="top">
         <router-link to="/">
-          <img src="images/ic_top_prev.png" alt="이전"
+          <img src="/images/ic_top_prev.png" alt="이전"
         /></router-link>
         <p class="txt">{{ title }}</p>
         <a href="#;" class="m_menu_btn"
-          ><img src="images/ic_menu.png" alt="menu"
+          ><img src="/images/ic_menu.png" alt="menu"
         /></a>
       </div>
     </header>

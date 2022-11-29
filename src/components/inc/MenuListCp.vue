@@ -2,20 +2,20 @@
   <div class="m_menu_wrap">
     <div class="top">
       <router-link to="/">
-        <img src="images/ic_home.png" alt="홈"
+        <img src="/images/ic_home.png" alt="홈"
       /></router-link>
       <router-link to="/mypage"
-        ><img src="images/ic_setting.png" alt="설정"
+        ><img src="/images/ic_setting.png" alt="설정"
       /></router-link>
     </div>
     <div class="m_menu_close">
-      <img src="images/ic_exit.png" alt="닫기" />
+      <img src="/images/ic_exit.png" alt="닫기" />
     </div>
     <div class="m_menu_pro">
       <p>안녕하세요,</p>
       <a href="../sub/mypage/mypage.html">
         <span class="name">홍길동</span><span>님</span
-        ><img src="images/ic_arw_r02.png" alt="" />
+        ><img src="/images/ic_arw_r02.png" alt="" />
       </a>
     </div>
     <div class="log">
@@ -32,7 +32,7 @@
           onclick="window.open('../inc/menu_search.html','_self','scrollbars=yes,resizable=no, left=0,top=0');return false"
         >
           <p>메뉴 검색</p>
-          <img src="images/ic_search.png" alt="메뉴 검색" />
+          <img src="/images/ic_search.png" alt="메뉴 검색" />
         </a>
       </div>
 

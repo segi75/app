@@ -3,7 +3,7 @@
     <section>
       <div class="mypage">
         <div class="name">
-          <div class="pro"><img src="images/profile.png" alt="" /></div>
+          <div class="pro"><img src="/images/profile.png" alt="" /></div>
           <p>홍길동</p>
         </div>
         <div class="my_info">
@@ -27,7 +27,7 @@
         <div class="etc_info">
           <div class="title on">
             <p>추가정보</p>
-            <img src="images/ic_arw_d01.png" alt="" />
+            <img src="/images/ic_arw_d01.png" alt="" />
           </div>
           <div class="info_txt">
             <div class="txt_box">
@@ -52,7 +52,7 @@
         <div class="etc_info">
           <div class="title on">
             <p>나의 회원증</p>
-            <img src="images/ic_arw_d01.png" alt="" />
+            <img src="/images/ic_arw_d01.png" alt="" />
           </div>
           <div class="info_txt">
             <div class="id_card">
@@ -92,7 +92,7 @@
         <div class="etc_info">
           <div class="title">
             <p>나의 신청내역</p>
-            <img src="images/ic_arw_d01.png" alt="" />
+            <img src="/images/ic_arw_d01.png" alt="" />
           </div>
           <div class="info_txt" style="display: none"></div>
         </div>

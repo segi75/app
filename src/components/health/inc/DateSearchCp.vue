@@ -1,11 +1,11 @@
 <template>
   <div class="health_date">
     <button class="arw">
-      <img src="images/ic_arw_l01.png" alt="이전" />
+      <img src="/images/ic_arw_l01.png" alt="이전" />
     </button>
     <button class="date" @click="openWinPop">22.11.15(화) 10:41</button>
     <button class="arw">
-      <img src="images/ic_arw_r08.png" alt="다음" />
+      <img src="/images/ic_arw_r08.png" alt="다음" />
     </button>
     <WinPopup
       ref="winPopup"

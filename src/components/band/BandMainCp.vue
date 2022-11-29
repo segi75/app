@@ -2,19 +2,19 @@
   <div>
     <section class="inbody_band">
       <div class="band_info">
-        <a href="inbody_band.html">
+        <router-link :to="{ name: 'band-setting' }">
           <div class="band_img">
-            <img src="images/inbody_band.png" alt="인바디밴드" />
+            <img src="/images/inbody_band.png" alt="인바디밴드" />
           </div>
           <div class="band_tit">
             <span>등록된 기기</span>
             <p>인바디밴드3</p>
           </div>
-          <img class="arw" src="images/ic_arw_r05.png" alt="" />
-        </a>
+          <img class="arw" src="/images/ic_arw_r05.png" alt="" />
+        </router-link>
       </div>
       <button class="btn_style02">
-        <img src="images/ic_re.png" alt="동기화" /> 밴드 기록 동기화
+        <img src="/images/ic_re.png" alt="동기화" /> 밴드 기록 동기화
       </button>
     </section>
 
@@ -23,7 +23,7 @@
         <div class="inbody_list">
           <div class="inbody_txt">
             <div class="name">
-              <img src="images/ic_inbody01.png" alt="" />
+              <img src="/images/ic_inbody01.png" alt="" />
               <p class="tit">걸음수</p>
             </div>
             <div class="count">
@@ -33,13 +33,13 @@
               </p>
             </div>
           </div>
-          <div class="graph"><img src="images/inbody01.png" alt="" /></div>
+          <div class="graph"><img src="/images/inbody01.png" alt="" /></div>
         </div>
 
         <div class="inbody_list">
           <div class="inbody_txt">
             <div class="name">
-              <img src="images/ic_inbody02.png" alt="" />
+              <img src="/images/ic_inbody02.png" alt="" />
               <p class="tit">심박수</p>
             </div>
             <div class="count">
@@ -56,7 +56,7 @@
         <div class="inbody_list">
           <div class="inbody_txt">
             <div class="name">
-              <img src="images/ic_inbody03.png" alt="" />
+              <img src="/images/ic_inbody03.png" alt="" />
               <p class="tit">수면</p>
             </div>
             <div class="count">
@@ -71,7 +71,7 @@
         <div class="inbody_list">
           <div class="inbody_txt">
             <div class="name">
-              <img src="images/ic_inbody04.png" alt="" />
+              <img src="/images/ic_inbody04.png" alt="" />
               <p class="tit">운동</p>
             </div>
             <div class="count">
@@ -86,7 +86,7 @@
         <div class="inbody_list">
           <div class="inbody_txt">
             <div class="name">
-              <img src="images/ic_inbody05.png" alt="" />
+              <img src="/images/ic_inbody05.png" alt="" />
               <p class="tit">식사기록</p>
             </div>
             <div class="count">
@@ -96,7 +96,7 @@
               </p>
             </div>
           </div>
-          <div class="graph"><img src="images/inbody02.png" alt="" /></div>
+          <div class="graph"><img src="/images/inbody02.png" alt="" /></div>
         </div>
       </div>
     </section>

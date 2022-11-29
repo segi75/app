@@ -4,11 +4,11 @@
       <div class="txt01">
         <p>인바디점수</p>
         <div class="close modal_close">
-          <img src="images/ic_exit02.png" alt="닫기" />
+          <img src="/images/ic_exit02.png" alt="닫기" />
         </div>
       </div>
       <div class="con">
-        <img src="images/health_pop.jpg" alt="" />
+        <img src="/images/health_pop.jpg" alt="" />
       </div>
     </div>
   </div>

@@ -11,7 +11,7 @@
             <div class="ic_menu">
               <div>
                 <router-link to="/health">
-                  <img src="images/ic_main01.png" alt="건강관리"
+                  <img src="/images/ic_main01.png" alt="건강관리"
                 /></router-link>
               </div>
               <p>건강관리</p>
@@ -19,7 +19,7 @@
             <div class="ic_menu">
               <div>
                 <a href="#;"
-                  ><img src="images/ic_main02.png" alt="복지관일정"
+                  ><img src="/images/ic_main02.png" alt="복지관일정"
                 /></a>
               </div>
               <p>복지관일정</p>
@@ -27,7 +27,7 @@
             <div class="ic_menu">
               <div>
                 <a href="#;"
-                  ><img src="images/ic_main03.png" alt="수강신청"
+                  ><img src="/images/ic_main03.png" alt="수강신청"
                 /></a>
               </div>
               <p>수강신청</p>
@@ -35,7 +35,7 @@
             <div class="ic_menu">
               <div>
                 <a href="#;"
-                  ><img src="images/ic_main04.png" alt="서비스예약"
+                  ><img src="/images/ic_main04.png" alt="서비스예약"
                 /></a>
               </div>
               <p>서비스예약</p>
@@ -43,7 +43,7 @@
             <div class="ic_menu">
               <div>
                 <a href="#;"
-                  ><img src="images/ic_main05.png" alt="식단정보"
+                  ><img src="/images/ic_main05.png" alt="식단정보"
                 /></a>
               </div>
               <p>식단정보</p>
@@ -51,7 +51,7 @@
             <div class="ic_menu">
               <div>
                 <a href="#;"
-                  ><img src="images/ic_main06.png" alt="셔틀버스"
+                  ><img src="/images/ic_main06.png" alt="셔틀버스"
                 /></a>
               </div>
               <p>셔틀버스</p>
@@ -66,20 +66,20 @@
             <div class="ic_menu">
               <div>
                 <a href="#;"
-                  ><img src="images/ic_main04.png" alt="서비스예약"
+                  ><img src="/images/ic_main04.png" alt="서비스예약"
                 /></a>
               </div>
               <p>서비스예약</p>
             </div>
             <div class="ic_menu">
               <div>
-                <a href="#;"><img src="images/ic_main_none.png" alt="" /></a>
+                <a href="#;"><img src="/images/ic_main_none.png" alt="" /></a>
               </div>
               <p></p>
             </div>
             <div class="ic_menu">
               <div>
-                <a href="#;"><img src="images/ic_main_none.png" alt="" /></a>
+                <a href="#;"><img src="/images/ic_main_none.png" alt="" /></a>
               </div>
               <p></p>
             </div>

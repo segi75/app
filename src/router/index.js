@@ -9,6 +9,7 @@ const HealthView = () => import("@/views/health/HealthView.vue");
 const HealthRecordView = () => import("@/views/health/HealthRecordView.vue");
 const MypageView = () => import("@/views/mypage/MypageView.vue");
 const BandView = () => import("@/views/band/BandView.vue");
+const BandMainCp = () => import("@/components/band/BandMainCp.vue");
 const BandSettingView = () => import("@/views/band/BandSettingView.vue");
 const MbershipView = () => import("@/views/mbership/MbershipView.vue");
 const AlarmView = () => import("@/views/alarm/AlarmView.vue");
@@ -49,12 +50,20 @@ const routes = [
     path: "/band",
     name: "band",
     component: BandView,
+    children: [
+      {
+        path: "main",
+        name: "band-main",
+        component: BandMainCp,
+      },
+      {
+        path: "setting",
+        name: "band-setting",
+        component: BandSettingView,
+      },
+    ],
   },
-  {
-    path: "/band-setting",
-    name: "band-setting",
-    component: BandSettingView,
-  },
+
   // mbership
   {
     path: "/mbership",

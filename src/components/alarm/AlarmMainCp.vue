@@ -5,7 +5,7 @@
         <div class="alarm">
           <div class="name">
             <div class="pro">
-              <img src="images/pro_logo.png" alt="" />
+              <img src="/images/pro_logo.png" alt="" />
             </div>
             <p>엔컴복지관</p>
           </div>
@@ -19,13 +19,13 @@
         <div class="alarm">
           <div class="name">
             <div class="pro">
-              <img src="images/pro_logo.png" alt="" />
+              <img src="/images/pro_logo.png" alt="" />
             </div>
             <p>엔컴복지관</p>
           </div>
           <div class="message">
             <p class="tit">8월 이벤트 안내</p>
-            <p class="img"><img src="images/alarm_map.jpg" alt="" /></p>
+            <p class="img"><img src="/images/alarm_map.jpg" alt="" /></p>
             <p class="txt">
               * 안내에 나온 엔컴복지관에서 선착순 100분께<br />
               &nbsp;&nbsp;&nbsp;순금 한 돈을 나눠드립니다.<br />

@@ -3,10 +3,10 @@
     <header>
       <div class="top">
         <router-link to="/"
-          ><img src="images/logo_s.png" alt="logo"
+          ><img src="/images/logo_s.png" alt="logo"
         /></router-link>
         <a href="#;" class="m_menu_btn"
-          ><img src="images/ic_menu.png" alt="menu"
+          ><img src="/images/ic_menu.png" alt="menu"
         /></a>
       </div>
       <p class="top_tit">

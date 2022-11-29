@@ -4,7 +4,7 @@
       <p class="tit01">복지통 소식을 전해드려요</p>
       <p class="more_btn">
         <router-link to="/notice">
-          더보기<img src="images/ic_arw_r01.png" alt=""
+          더보기<img src="/images/ic_arw_r01.png" alt=""
         /></router-link>
       </p>
     </div>

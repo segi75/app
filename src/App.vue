@@ -53,9 +53,9 @@ export default {
         this.menuName = "건강관리";
       } else if (url == "/mypage") {
         this.menuName = "마이페이지";
-      } else if (url == "/band") {
+      } else if (url.indexOf("/band") > -1) {
         this.menuName = "인바디밴드";
-      } else if (url == "/band-setting") {
+      } else if (url == "/bandSetting") {
         this.menuName = "인바디밴드";
       } else if (url == "/mbership") {
         this.menuName = "모바일 회원카드";
