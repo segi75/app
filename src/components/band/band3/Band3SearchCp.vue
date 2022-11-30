@@ -8,7 +8,7 @@
         </div>
         <div class="btn">
           <button class="off modal_close">취소</button>
-          <button class="on" onClick="location.href='inbody_band02_4.html'">
+          <button class="on" @click="$router.push({ name: 'band-info' })">
             등록
           </button>
         </div>
@@ -29,14 +29,6 @@
           >
             기기 검색
           </button>
-        </div>
-
-        <div class="inbody_search">
-          <p class="txt04">기기 화면에 아래의 4글자 코드가 보여집니다.</p>
-          <div class="inbody_btn modal_btn">
-            <span class="left">5532</span>
-            <span class="right">InBodyBAND3</span>
-          </div>
         </div>
       </div>
     </section>

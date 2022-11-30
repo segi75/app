@@ -18,7 +18,19 @@ const BandView = () => import("@/views/band/BandView.vue"); //밴드 메인
 const BandSyncCp = () => import("@/components/band/BandSyncCp.vue"); // 기기 동기화
 const BandSettingCp = () => import("@/components/band/BandSettingCp.vue"); // 기기 선택 전 상태
 const BandDeviceCp = () => import("@/components/band/BandDeviceCp.vue"); // 기기 목록
-const BandSearchCp = () => import("@/components/band/BandSearchCp.vue"); // 기기 검색
+
+const BandDeviceSelectCp = () =>
+  import("@/components/band/device/BandDeviceSelectCp.vue"); // 디바이스 선택화면
+const BandDeviceBand2Cp = () =>
+  import("@/components/band/device/BandDeviceBand2Cp.vue"); // 디바이스 band2 선택된 화면
+const BandDeviceBand3Cp = () =>
+  import("@/components/band/device/BandDeviceBand3Cp.vue"); // 디바이스 band3 선택된 화면
+const BandDeviceBand3ApplyCp = () =>
+  import("@/components/band/device/BandDeviceBand3ApplyCp.vue"); // 디바이스 band3 선택완료 화면
+const BandDeviceBand3InfoCp = () =>
+  import("@/components/band/device/BandDeviceBand3InfoCp.vue"); // 디바이스 band3 INPUT 등록 화면
+const BandDeviceBandWaitCp = () =>
+  import("@/components/band/device/BandDeviceBandWaitCp.vue"); // 디바이스 설정대기 화면
 
 // 멤버쉽 카드
 const MbershipView = () => import("@/views/mbership/MbershipView.vue");
@@ -66,24 +78,51 @@ const routes = [
     component: BandView,
     children: [
       {
-        path: "sync",
+        path: "/band/sync",
         name: "band-sync",
         component: BandSyncCp,
       },
       {
-        path: "setting",
+        path: "/band/setting",
         name: "band-setting",
         component: BandSettingCp,
       },
       {
-        path: "device",
+        path: "/band/device",
         name: "band-device",
         component: BandDeviceCp,
-      },
-      {
-        path: "search",
-        name: "band-search",
-        component: BandSearchCp,
+        children: [
+          {
+            path: "/band/device/select",
+            name: "band-device-select",
+            component: BandDeviceSelectCp,
+          },
+          {
+            path: "/band/device/band2",
+            name: "band-device-band2",
+            component: BandDeviceBand2Cp,
+          },
+          {
+            path: "/band/device/band3",
+            name: "band-device-band3",
+            component: BandDeviceBand3Cp,
+          },
+          {
+            path: "/band/device/band3/apply",
+            name: "band-device-band3-apply",
+            component: BandDeviceBand3ApplyCp,
+          },
+          {
+            path: "/band/device/band3/info",
+            name: "band-device-band3-info",
+            component: BandDeviceBand3InfoCp,
+          },
+          {
+            path: "/band/device/wait",
+            name: "band-device-wait",
+            component: BandDeviceBandWaitCp,
+          },
+        ],
       },
     ],
   },

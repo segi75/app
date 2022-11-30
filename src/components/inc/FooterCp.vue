@@ -9,12 +9,12 @@
             <img src="/images/ic_nav01.png" alt="마이페이지" />
           </router-link>
         </li>
-        <li>
+        <li v-if="diviceSelectedYN === 'Y'">
           <router-link :to="{ name: 'band-sync' }"
             ><img src="/images/ic_nav02.png" alt="인바디밴드1" />
           </router-link>
         </li>
-        <li>
+        <li v-if="diviceSelectedYN === 'N'">
           <router-link :to="{ name: 'band-setting' }"
             ><img src="/images/ic_nav02.png" alt="인바디밴드2" />
           </router-link>
@@ -42,6 +42,7 @@ export default {
   data() {
     return {
       copy: "<copyright>copyrights ⓒ 복지통, All Right Reserved.</copyright>",
+      diviceSelectedYN: "N",
     };
   },
 };

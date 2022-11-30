@@ -1,30 +1,6 @@
 <template>
   <div>
-    <section class="sub_box">
-      <div class="inbody">
-        <p class="sub_box_title">등록하실 기기를 선택하세요.</p>
-        <p class="sub_box_tit02">밴드</p>
-        <div class="list">
-          <router-link :to="{ name: 'band-search' }">
-            <div class="band">
-              <img src="/images/inbody_band.png" alt="" />
-              <p class="tit">인바디밴드3</p>
-            </div>
-            <img class="arw" src="/images/ic_arw_r05.png" alt="" />
-          </router-link>
-        </div>
-
-        <div class="list">
-          <a href="inbody_band02_2.html">
-            <div class="band">
-              <img src="/images/inbody_band02.png" alt="" />
-              <p class="tit">인바디밴드2</p>
-            </div>
-            <img class="arw" src="/images/ic_arw_r05.png" alt="" />
-          </a>
-        </div>
-      </div>
-    </section>
+    <router-view></router-view>
   </div>
 </template>
 <script>

@@ -4,10 +4,9 @@
     <div class="img"><img src="images/login_img.png" alt="img" /></div>
     <div class="login_form">
       <p class="txt">회원정보 확인을 위해 휴대폰번호를 입력해주세요.</p>
-      <input class="id" type="text" placeholder="휴대폰번호" />
-      <button class="btn_style01" onclick="location.href='../../index.html'">
-        확 인
-      </button>
+      <input class="id" type="text" placeholder="아이디" />
+      <input class="pw" type="password" placeholder="비밀번호" />
+      <button class="btn_style01" @click="$router.push('/')">확 인</button>
     </div>
     <div class="join_txt"><a href="#;">회원가입</a></div>
   </section>

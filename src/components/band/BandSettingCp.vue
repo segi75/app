@@ -2,7 +2,7 @@
   <div>
     <section class="inbody_band">
       <div class="band_info">
-        <router-link :to="{ name: 'band-device' }">
+        <router-link :to="{ name: 'band-device-select' }">
           <div class="band_tit02">
             <p>등록된 기기 없음</p>
             <span>인바디 기기를 등록해 주세요.</span>
