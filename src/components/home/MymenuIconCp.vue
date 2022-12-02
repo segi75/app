@@ -10,7 +10,7 @@
           <div class="icon_menu">
             <div class="ic_menu">
               <div>
-                <router-link to="/health">
+                <router-link :to="{ name: 'health-main' }">
                   <img src="/images/ic_main01.png" alt="건강관리"
                 /></router-link>
               </div>

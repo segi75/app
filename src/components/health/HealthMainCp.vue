@@ -69,5 +69,6 @@ import DateSearchCp from "@/components/health/inc/DateSearchCp.vue";
 import ModalPopCp from "@/components/health/inc/ModalPopCp.vue";
 export default {
   components: { DateSearchCp, ModalPopCp },
+  mounted() {},
 };
 </script>

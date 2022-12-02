@@ -21,7 +21,7 @@ export default {
   methods: {
     openWinPop() {
       // vue의 라우터에 등록한 팝업창 주소를 uri로 설정하도록 한다
-      let uri = "/healthRecord";
+      let uri = "/health/record";
       this.$refs.winPopup.openWinPop(uri);
     },
   },

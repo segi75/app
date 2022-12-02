@@ -132,13 +132,13 @@
   letter-spacing: -0.1rem;
 }
 .notice_slide .swiper-pagination-bullet {
-  background: url(../images/slide_off.png) no-repeat center;
+  background: url(/images/slide_off.png) no-repeat center;
   opacity: 1;
   width: 14px;
   height: 14px;
 }
 .notice_slide .swiper-pagination-bullet-active {
-  background: url(../images/slide_on.png) no-repeat center;
+  background: url(/images/slide_on.png) no-repeat center;
 }
 .notice_slide
   .swiper-horizontal

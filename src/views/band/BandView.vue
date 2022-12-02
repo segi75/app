@@ -6,10 +6,8 @@
   </div>
 </template>
 <script>
-import MenuListCp from "@/components/inc/MenuListCp.vue";
-
 export default {
-  components: { MenuListCp },
+  components: {},
   mounted() {
     //== HOME / SUB 공통 요소 화면설정 ==============================
 

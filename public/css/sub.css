@@ -145,7 +145,7 @@
 
 /* LOGIN */
 .login_wrap {
-  background: url(../images/login_bg.jpg) #fff no-repeat top center;
+  background: url(/images/login_bg.jpg) #fff no-repeat top center;
 }
 .login {
   padding-top: 80px;
@@ -414,7 +414,7 @@
   vertical-align: middle;
 }
 .my_etc_info .etc_info .title.on {
-  background: url(../images/ic_arw_t03.png) no-repeat center right;
+  background: url(/images/ic_arw_t03.png) no-repeat center right;
 }
 .my_etc_info .etc_info .title.on img {
   display: none;
@@ -1719,7 +1719,7 @@
   content: "";
   clear: both;
   display: block;
-  background: url(../images/ic_arw_r07.png) no-repeat center right;
+  background: url(/images/ic_arw_r07.png) no-repeat center right;
   width: 13px;
   height: 23px;
   top: 50%;

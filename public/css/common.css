@@ -2,7 +2,7 @@
 
 header {
   width: 100%;
-  background: url(../images/logo_bg.png) #0072ff no-repeat bottom 60px right -18px;
+  background: url(/images/logo_bg.png) #0072ff no-repeat bottom 60px right -18px;
 }
 header .top {
   padding: 60px 40px 45px;
@@ -181,7 +181,7 @@ header .search .menu_search .m_search_btn {
   border: none;
 }
 .m_menu_wrap .m_menu .m_menu_con .m_menu01 > a {
-  background: url(../images/ic_arw_d02.png) no-repeat top 25px right;
+  background: url(/images/ic_arw_d02.png) no-repeat top 25px right;
   line-height: 1;
   letter-spacing: -0.1rem;
 }
@@ -201,7 +201,7 @@ header .search .menu_search .m_search_btn {
   border: none;
 }
 .m_menu_wrap .m_menu .m_menu_con .m_menu01.open > a {
-  background: url(../images/ic_arw_t01.png) no-repeat top 25px right;
+  background: url(/images/ic_arw_t01.png) no-repeat top 25px right;
   padding-bottom: 40px;
 }
 .m_menu_wrap .m_menu .m_menu_con .m_menu01.open > a .tit01 {
@@ -223,7 +223,7 @@ header .search .menu_search .m_search_btn {
   border: none;
 }
 .m_menu_wrap .m_menu .m_menu_con .m_menu02 > a {
-  background: url(../images/ic_arw_d03.png) no-repeat top 10px right;
+  background: url(/images/ic_arw_d03.png) no-repeat top 10px right;
   color: #000;
   font-size: 1.75rem;
   font-weight: 500;
@@ -232,10 +232,10 @@ header .search .menu_search .m_search_btn {
   margin-bottom: 0;
 }
 .m_menu_wrap .m_menu .m_menu_con .m_menu02.open > a.on {
-  background: url(../images/ic_arw_t02.png) no-repeat top 10px right;
+  background: url(/images/ic_arw_t02.png) no-repeat top 10px right;
 }
 .m_menu_wrap .m_menu .m_menu_con .m_menu02.open > a {
-  background: url(../images/ic_arw_t02.png) no-repeat top 10px right;
+  background: url(/images/ic_arw_t02.png) no-repeat top 10px right;
 }
 .m_menu_wrap .m_menu .m_menu_con .m_menu02 ul {
   padding: 0 0 0 20px;

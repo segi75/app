@@ -1,16 +1,12 @@
 <template>
   <div>
-    <!-- //Content -->
-    <HealthMainCp />
-    <!-- //Content -->
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import HealthMainCp from "@/components/health/HealthMainCp.vue";
-
 export default {
-  components: { HealthMainCp },
+  components: {},
 
   mounted() {
     //== HOME / SUB 공통 요소 화면설정 ==============================
@@ -25,4 +21,3 @@ export default {
   },
 };
 </script>
-<style scoped></style>

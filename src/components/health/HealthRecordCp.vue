@@ -2,12 +2,12 @@
   <div>
     <header>
       <div class="top">
-        <router-link :to="{ name: 'health' }">
+        <router-link :to="{ name: 'health-main' }">
           <button class="btn">취소</button>
         </router-link>
 
         <p class="txt">데이터 선택</p>
-        <router-link :to="{ name: 'health' }">
+        <router-link :to="{ name: 'health-main' }">
           <button class="btn">저장</button>
         </router-link>
       </div>
@@ -140,12 +140,15 @@
 <script>
 export default {
   components: {},
-
-  mounted() {
-    // 페이지 url로 top, bottom 설정
-    this.$parent.f_urlCheck();
-    // body css class changes
-    document.body.classList.add("sub_con");
+  data() {
+    return {
+      sampleData: "",
+    };
   },
+  setup() {},
+  created() {},
+  mounted() {},
+  unmounted() {},
+  methods: {},
 };
 </script>
