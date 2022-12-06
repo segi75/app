@@ -49,7 +49,7 @@ export default {
       let router = this.$route;
       let url = router.fullPath;
       console.log("url:", url);
-      if (url == "/health") {
+      if (url.indexOf("/health") > -1) {
         this.menuName = "건강관리";
       } else if (url == "/mypage") {
         this.menuName = "마이페이지";

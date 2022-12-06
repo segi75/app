@@ -1,14 +1,13 @@
 <template>
   <div>
     <!-- //CONTENT -->
-    <NoticeMainCp />
+    <router-view></router-view>
     <!-- //CONTENT -->
   </div>
 </template>
 <script>
-import NoticeMainCp from "@/components/notice/NoticeMainCp.vue";
 export default {
-  components: { NoticeMainCp },
+  components: {},
   mounted() {
     //== HOME / SUB 공통 요소 화면설정 ==============================
 

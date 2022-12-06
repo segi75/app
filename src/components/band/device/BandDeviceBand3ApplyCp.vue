@@ -11,7 +11,7 @@
 
           <button
             class="on"
-            @click="$router.push({ name: 'band-device-band3-info' })"
+            @click="$router.push({ name: 'band-device-band3-infow' })"
           >
             등록
           </button>

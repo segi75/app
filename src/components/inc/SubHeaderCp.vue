@@ -2,9 +2,9 @@
   <div>
     <header>
       <div class="top">
-        <router-link to="/">
-          <img src="/images/ic_top_prev.png" alt="이전"
-        /></router-link>
+        <a href="#" @click="$router.go(-1)">
+          <img src="/images/ic_top_prev.png" alt="이전" />
+        </a>
         <p class="txt">{{ title }}</p>
         <a href="#;" class="m_menu_btn"
           ><img src="/images/ic_menu.png" alt="menu"
@@ -24,7 +24,6 @@ export default {
     title: { String, default: "SUB PAGE" },
   },
   components: { MenuListCp },
-
   mounted() {
     // 우측메뉴 열고 닫기
     $(".m_menu_btn").bind("click", function () {

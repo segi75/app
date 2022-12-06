@@ -2,7 +2,7 @@
   <div>
     <section class="inbody_band">
       <div class="band_info">
-        <router-link :to="{ name: 'band-setting' }">
+        <router-link :to="{ name: 'band-info-main' }">
           <div class="band_img">
             <img src="/images/inbody_band.png" alt="인바디밴드" />
           </div>
